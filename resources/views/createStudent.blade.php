@@ -1,7 +1,7 @@
 @extends('mainTemplate')
 @section('otherContent')
 
-<form action="" method="POST">
+<form action="{{ route('create_post') }}" method="POST">
 
 @csrf
 <label>Student Name:</label><br>

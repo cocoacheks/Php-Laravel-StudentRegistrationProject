@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\StudentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +21,6 @@ Route::get('/', function () {
 Route::get('/edit-student',function () {
     echo "Route created for Student Information Editing";
 });
+
+Route::get('/create-student',[StudentController::class,'formIndex']);
+Route::post('/create-post',[StudentController::class,'formPost'])->name('create_post');
