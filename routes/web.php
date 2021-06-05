@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/edit-student',function () {
+    echo "Route created for Student Information Editing";
+});
